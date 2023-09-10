@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"model","l":"DealershipCalc"},{"p":"tests","l":"JUnitTestSuite"},{"p":"tests","l":"TestMustang"},{"p":"tests","l":"TestRunner"},{"p":"tests","l":"TestTesla"},{"p":"model","l":"Vehicle"}];updateSearchResults();
