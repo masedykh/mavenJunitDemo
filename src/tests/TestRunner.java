@@ -1,0 +1,27 @@
+/**
+ * @author Michael Sedykh - masedykh
+ * CIS175 - Fall 2023
+ * Sep 10, 2023
+ * 
+ * TestRunner outputting any failing JUnit Tests from the JUnit Test Suite onto the console; otherwise, true is returned
+ */
+
+package tests;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+		Result result = JUnitCore.runClasses(JUnitTestSuite.class);
+		
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+		
+		System.out.println(result.wasSuccessful());
+	}
+
+}
